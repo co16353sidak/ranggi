@@ -72,9 +72,14 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script type="text/javascript">
-      var ranggi = ["Kosh b", "Saali Motti Ho gayi", "Mummy da naa aa", "Fuddu gallaan naa kar", "BUND", "Gaal ni kaddni", "Not Me", "Asha!", "WMK", "Insta-God", "Meenali Kon ?", "Snap ni bheji hun tak", "Snapchat ni kholna", "Plaas naal dand kaddun mein?", "Mere Cousin kol phone si", "Saare parh rahe ne", "Guests aaye hoye si", "mein holidays ch karleya saara", "yrr 5 number da galat ho gya", "Mein 11 phase ch rehnda aa", "jattmp3", "Dj Johal", "jattPunjab", "100,000 Snapchat score"];
-      var x = Math.floor((Math.random() * ranggi.length));
-      document.getElementById("ranggi").innerHTML = ranggi[x];
+      var ranggi = ["Kosh b", "Saali Motti Ho gayi", "Mummy da naa aa", "Fuddu gallaan naa kar", "BUND", "Gaal ni kaddni", "I am NOT", "Asha!", "WMK", "Insta-God", "Meenali Kon ?", "Snap ni bheji hun tak", "Snapchat ni kholna", "Plaas naal dand kaddun mein?", "Mere Cousin kol phone si", "Saare parh rahe ne", "Guests aaye hoye si", "mein holidays ch karleya saara", "yrr 5 number da galat ho gya", "Mein 11 phase ch rehnda aa", "jattmp3", "Dj Johal", "jattPunjab", "100,000 Snapchat score"];
+			function func()
+			{
+				var x = Math.floor((Math.random() * ranggi.length));
+      	document.getElementById("ranggi").innerHTML = ranggi[x];
+			}
+			func();
+			setInterval(func, 2000);
     </script>
 		<script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
